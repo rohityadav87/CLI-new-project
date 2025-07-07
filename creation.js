@@ -1,5 +1,5 @@
-//  - `fs` (File System) — Node.js का module है जो फाइलें बनाने/पढ़ने/लिखने में मदद करता है।
-// - `readline` — ये यूज़र से command line में input लेने के लिए है।
+//  `fs` (File System) — Node.js का module है जो फाइलें बनाने/पढ़ने/लिखने में मदद करता है।
+// `readline` — ये यूज़र से command line में input लेने के लिए है।
  import readline from 'readline';
 import fs from 'fs';
 
@@ -15,7 +15,7 @@ const filecreation = () => {
 // जो भी यूज़र टाइप करेगा वो filename में आएगा।
     r1.question("Enter your filename: ", (filename) => {
         // इसके अंदर एक और question पूछा जा रहा है: "Enter the content for your file:"
-// - इसका जवाब `content` variable में आएगा।
+//  इसका जवाब `content` variable में आएगा।
         r1.question("Enter the content for your file: ", (content) => {
             // अब यह line यूज़र द्वारा दिया गया content को एक फाइल में लिख देती है।
             // ${filename}.txt मतलब फाइल का नाम जो user ने दिया, उसके साथ .txt जोड़ना।
